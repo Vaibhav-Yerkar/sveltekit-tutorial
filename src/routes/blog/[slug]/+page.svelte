@@ -2,4 +2,4 @@
   export let data;
 </script>
 
-<p class="font-bold text-slate-100 bg-slate-900">{data.content}</p>
+<h1 class="text-red-500 font-bold">{data.content}</h1>

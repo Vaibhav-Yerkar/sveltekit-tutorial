@@ -7,4 +7,3 @@
 <Navbar />
 <slot />
 <Footer />
-
