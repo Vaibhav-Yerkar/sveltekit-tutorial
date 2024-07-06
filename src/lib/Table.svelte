@@ -1,5 +1,6 @@
 <script>
     export let names
+    let action = null
 </script>
 
 <div
@@ -22,10 +23,14 @@
 						<p class="font-medium pl-5 text-gray-500 pt-0">{user.email}</p>                        
 					</div>
 				</div>
-                <form method="POST" action="/profiles?/delete">
+        <!-- todo: inmplement update functionality and submit attendance sheet -->
+                <form method="POST" action="/profiles?/db_modify">
                 <input type="hidden" name="id" id="id" value={user.id}>
-                <button type="submit">
+                <button type="submit" name="action" value="delete">
                     <img class="w-4 float-right" src="./trash-can.svg" alt="delete"/>
+                </button>
+                <button type="submit" name="action" value="update">
+                    <img class="w-4 float-right ml-2" src="./pencil2.svg" alt="update"/>
                 </button>
                 </form>
 			</div>

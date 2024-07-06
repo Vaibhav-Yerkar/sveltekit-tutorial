@@ -18,7 +18,7 @@ export async function load() {
       await seed()
       const { rows: names } = await db.query('SELECT * FROM names')
       return {
-        users: names
+        names: names
       }
     } 
 }
@@ -80,16 +80,18 @@ export const actions = {
 	// 	return { success: true };
 	// },
 
-  delete: async ({ request }) => {
+  db_modify: async ({ request }) => {
     const data = await request.formData();
     const db = createPool({ connectionString: POSTGRES_URL })
     const client = await db.connect();
 
     const id = data.get('id');
+    const action = data.get('action');
+    console.log(action)
 
-    const deleteUser = await client.sql`
-    DELETE FROM names
-    WHERE id = ${id};`
+    // const deleteUser = await client.sql`
+    // DELETE FROM names
+    // WHERE id = ${id};`
 	
 		return { success: true };
 	},
