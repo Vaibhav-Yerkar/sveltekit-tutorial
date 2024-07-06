@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "vite dev",
+    "prebuild": "node scripts/renamePayDir.js",
+    "postinstall": "node scripts/renamePayDir.js",
     "build": "vite build",
     "preview": "vite preview",
-    "postinstall": "node scripts/renamePayDir.js",
-    "prebuild": "node scripts/renamePayDir.js",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
   },
