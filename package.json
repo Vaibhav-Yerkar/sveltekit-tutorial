@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "vite dev",
-    "vercel-build": "node scripts/renamePayDir.js && npm run build",
+    "prebuild": "node scripts/renamePayDir.js",
     "build": "vite build",
+    "vercel-build":"npm run prebuild && npm run build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
