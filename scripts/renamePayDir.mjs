@@ -1,7 +1,9 @@
-// scripts/renamePayDir.js
+// scripts/renamePayDir.mjs
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
 const oldPath = path.join(__dirname, '../node_modules/neucron-sdk/dist/pay');
 const newPath = path.join(__dirname, '../node_modules/neucron-sdk/dist/Pay');
