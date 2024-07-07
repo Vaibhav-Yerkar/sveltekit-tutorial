@@ -80,18 +80,32 @@ export const actions = {
 	// 	return { success: true };
 	// },
 
-  db_modify: async ({ request }) => {
+  delete: async ({ request }) => {
     const data = await request.formData();
     const db = createPool({ connectionString: POSTGRES_URL })
     const client = await db.connect();
 
     const id = data.get('id');
-    const action = data.get('action');
-    console.log(action)
 
-    // const deleteUser = await client.sql`
-    // DELETE FROM names
-    // WHERE id = ${id};`
+    const deleteUser = await client.sql`
+    DELETE FROM names
+    WHERE id = ${id};`
+	
+		return { success: true };
+	},
+
+  update: async ({ request }) => {
+    const data = await request.formData();
+    const db = createPool({ connectionString: POSTGRES_URL })
+    const client = await db.connect();
+
+    const id = data.get('id');
+    const name = data.get('name');
+    const email = data.get('email');
+
+    const deleteUser = await client.sql`
+    UPDATE names SET name = ${name}, email = ${email}
+    WHERE id = ${id};`
 	
 		return { success: true };
 	},
@@ -111,6 +125,7 @@ export const actions = {
     `
     return { success: true };
 	}
+
 };
 
 
