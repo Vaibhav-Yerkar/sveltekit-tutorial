@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite dev",
-    "rename": "node scripts/renamePayDir.js",
+    "rename": "node scripts/renamePayDir.mjs",
     "build": "vite build",
     "vercel-build": "npm run rename && npm run build",
     "preview": "vite preview",
