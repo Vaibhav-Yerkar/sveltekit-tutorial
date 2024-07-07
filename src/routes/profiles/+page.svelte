@@ -61,7 +61,7 @@
   </form>
   {#if form?.success}
     <!-- this message is ephemeral; it exists because the page was rendered in
-		   response to a form submission. it will vanish if the user reloads -->
+		  response to a form submission. it will vanish if the user reloads -->
     <p class="pt-2">Added new Applicant!</p>
   {/if}
 </div>
