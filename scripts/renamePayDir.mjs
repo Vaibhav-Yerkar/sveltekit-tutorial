@@ -1,7 +1,7 @@
 // scripts/renamePayDir.mjs
 
 import fs from 'fs';
-import path from 'path';
+import path from 'path'; 
 
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
@@ -11,11 +11,11 @@ const newPath = path.join(__dirname, '../node_modules/neucron-sdk/dist/Pay');
 console.log(`Renaming ${oldPath} to ${newPath}`);
 
 if (fs.existsSync(oldPath)) {
-  fs.rename(oldPath, newPath, function (err) {
+  fs.rename(oldPath, newPath, function (err) { 
     if (err) {
       console.error('Error renaming directory:', err);
     } else {
-      console.log('Directory renamed successfully');
+      console.log('Directory renamed successfully...');
     }
   });
 } else {
