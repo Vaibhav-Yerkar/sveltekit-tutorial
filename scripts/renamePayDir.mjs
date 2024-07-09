@@ -5,8 +5,8 @@ import path from 'path';
 
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
-const oldPath = path.join(__dirname, '../node_modules/neucron-sdk/dist/pay');
-const newPath = path.join(__dirname, '../node_modules/neucron-sdk/dist/Pay');
+const newPath = path.join(__dirname, '../node_modules/neucron-sdk/dist/pay');
+const oldPath = path.join(__dirname, '../node_modules/neucron-sdk/dist/Pay');
 
 console.log(`Renaming ${oldPath} to ${newPath}`);
 
