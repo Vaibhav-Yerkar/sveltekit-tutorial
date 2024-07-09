@@ -1,0 +1,40 @@
+{
+    "version": 9,
+    "compilerVersion": "1.19.2+commit.c3a20a0",
+    "contract": "Multiplier",
+    "md5": "7da02b8263d79b8639320080521b1d3f",
+    "structs": [],
+    "library": [],
+    "alias": [],
+    "abi": [
+        {
+            "type": "function",
+            "name": "unlock",
+            "index": 0,
+            "params": [
+                {
+                    "name": "num1",
+                    "type": "int"
+                },
+                {
+                    "name": "num2",
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "type": "constructor",
+            "params": [
+                {
+                    "name": "pd",
+                    "type": "int"
+                }
+            ]
+        }
+    ],
+    "stateProps": [],
+    "buildType": "debug",
+    "file": "file:///Users/vaibhavyerkar/Desktop/Vs_Code/TSoC/Svelte/svelte-tutorial/artifacts/multiplier.scrypt",
+    "hex": "00<pd>610079527a75517a7561527952799551799c777777",
+    "sourceMapFile": ""
+}

@@ -1,5 +1,4 @@
 import {
-    ByteString,
     Sha256,
     sha256,
     SmartContract,
@@ -7,6 +6,7 @@ import {
     method,
     prop,
 } from 'scrypt-ts'
+import type { ByteString } from 'scrypt-ts'
 
 export class Demo extends SmartContract {
     @prop()

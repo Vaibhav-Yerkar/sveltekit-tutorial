@@ -1,0 +1,36 @@
+{
+    "version": 9,
+    "compilerVersion": "1.19.2+commit.c3a20a0",
+    "contract": "Demo",
+    "md5": "b00e825844d0cfbfa2bb8e315a97fe4e",
+    "structs": [],
+    "library": [],
+    "alias": [],
+    "abi": [
+        {
+            "type": "function",
+            "name": "unlock",
+            "index": 0,
+            "params": [
+                {
+                    "name": "message",
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "type": "constructor",
+            "params": [
+                {
+                    "name": "hash",
+                    "type": "Sha256"
+                }
+            ]
+        }
+    ],
+    "stateProps": [],
+    "buildType": "debug",
+    "file": "file:///Users/vaibhavyerkar/Desktop/Vs_Code/TSoC/Svelte/svelte-tutorial/artifacts/demo.scrypt",
+    "hex": "<hash>5179a85179877777",
+    "sourceMapFile": ""
+}

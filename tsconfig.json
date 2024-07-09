@@ -9,7 +9,17 @@
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
-		"moduleResolution": "bundler"
+		"moduleResolution": "bundler",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "plugins": [
+      {
+        "transform": "scrypt-ts/dist/transformer",   // Required
+        "transformProgram": true,                    // Required
+        "outDir": "./scrypt",                        // Optional, define the auto-generated `.scrypt` files folder
+        "debug": false                               // Optional, enable/disable debug log in console.
+      }
+    ]
 	}
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
 	// except $lib which is handled by https://kit.svelte.dev/docs/configuration#files
