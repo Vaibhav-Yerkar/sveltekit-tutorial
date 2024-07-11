@@ -33,6 +33,7 @@
     "@vercel/postgres": "^0.9.0",
     "neucron-sdk": "^0.2.1",
     "neucron-signer": "^1.3.2",
+    "scrypt-cli": "^0.1.78",
     "scrypt-ts": "^1.3.31"
   }
 }
